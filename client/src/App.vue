@@ -13,7 +13,7 @@
           <ul class="uk-navbar-nav">
             <li>
               <a class="uk-navbar-toggle" href="#" style="color: black">
-                <i class="material-icons">menu</i> <span style="color: black">Shop</span>
+                <i class="material-icons">menu</i> <span style="color: black;">Shop</span>
                 <div class="uk-navbar-dropdown uk-navbar-dropdown-width-3">
                           <div class="uk-navbar-dropdown-grid uk-child-width-1-3" uk-grid>
                               <div>
@@ -61,9 +61,8 @@
           <span class="uk-margin-small-right uk-button uk-button-default uk-margin-small-right" uk-icon="icon: cart; ratio: 1.3" uk-toggle="target: #offcanvas-reveal" style="border: none"></span>
           <div id="offcanvas-reveal" uk-offcanvas="mode: reveal; flip: true; overlay: true">
             <div class="uk-offcanvas-bar">
-                <button class="uk-offcanvas-close" type="button" uk-close></button>
-                <h3>Title</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <button class="uk-offcanvas-close" type="button" uk-close style="color: black"></button>
+                <h3 class="offcanvas-font" style="color: black">your cart is empty</h3>
             </div>
           </div>
         </div>
@@ -82,5 +81,13 @@
 <style lang="scss">
   .logo-word {
     letter-spacing: 10px;
+  }
+
+  .uk-offcanvas-bar {
+    background: white;
+  }
+
+  h3 .offcanvas-font {
+    color: black
   }
 </style>
