@@ -4,9 +4,10 @@
       <nav class="uk-navbar-container" uk-navbar="dropbar: true" style="background: white" >
         <div class="uk-navbar-left">
             <ul class="uk-navbar-nav">
-                <li class="uk-active logo-word"><a href="#" style="font-size: 20px; font-weight: 600"><img src="logo.ico" style="width: 70px; height: 70px; margin: auto">PBL</a></li>
+                <router-link to="/">
+                <li class="uk-active logo-word" style="text-decoration: none"><a href="#" style="font-size: 20px; font-weight: 600; color: black; text-decoration: none"><img src="logo.ico" style="width: 70px; height: 70px; margin: auto;">PBL</a></li>
                 <li class="uk-parent"><a href=""></a></li>
-                <li><a href=""></a></li>
+                </router-link>
             </ul>
         </div>
         <div class="uk-navbar-left">
@@ -57,6 +58,9 @@
 
       </div>
       <div class="uk-navbar-right">
+        <ul class="uk-iconnav">
+          <li><router-link to="/login"><a href="" uk-icon="icon: user" style="color: black"></a></router-link></li>
+      </ul>
         <div class="uk-offcanvas-content">
           <span class="uk-margin-small-right uk-button uk-button-default uk-margin-small-right" uk-icon="icon: cart; ratio: 1.3" uk-toggle="target: #offcanvas-reveal" style="border: none"></span>
           <div id="offcanvas-reveal" uk-offcanvas="mode: reveal; flip: true; overlay: true">
@@ -89,5 +93,17 @@
 
   h3 .offcanvas-font {
     color: black
+  }
+
+  li::hover {
+    border-bottom: none
+  }
+
+  .uk-link::hover {
+    color: white
+  }
+
+  a:hover  {
+    text-decoration: none
   }
 </style>
